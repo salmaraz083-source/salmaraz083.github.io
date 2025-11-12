@@ -84,7 +84,7 @@ body {
  
 
       img.Producto {
-        margin-left: 85px;
+        margin-left: center;
     }
 
     a.producto:hover {
@@ -92,7 +92,7 @@ body {
     }
 
    .producto-info {
-      max-width: 500px;
+      max-width: 400px;
       background-color: var(--blanco);
       padding: 30px;
       border-radius: 15px;
