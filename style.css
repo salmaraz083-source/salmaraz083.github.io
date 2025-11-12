@@ -230,4 +230,8 @@
   .rrusel-track > * {
     flex-shrink: 0;
   }
+div {
+  width: 90%;
+  max-width: 400px;
+}
 
