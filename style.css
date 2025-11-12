@@ -1,1 +1,233 @@
 
+    
+    :root {
+      --turquesa-claro: #A0E7E5;
+      --turquesa-medio: #00B4D8;
+      --turquesa-oscuro: #0077B6;
+      --blanco: #ffffff;
+      --gris-suave: #f5f5f5;
+    }
+
+    body {
+
+      margin: 0;
+     
+      background-color: var(--gris-suave);
+      color: var(--turquesa-oscuro);
+    }
+
+    header {
+      background-color: var(--turquesa-medio);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: var(--blanco);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    main {
+      display: flex;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    img.producto-imagen {
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .producto-imagen:hover {
+      transform: scale(1.05);
+    }
+
+    .producto-info {
+      max-width: 500px;
+      background-color: var(--blanco);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    .producto-info h2 {
+      color: var(--turquesa-medio);
+      margin-bottom: 20px;
+    }
+
+    .producto-info p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .boton-compra {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: var(--turquesa-oscuro);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .boton-compra:hover {
+      background-color: var(--turquesa-medio);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--turquesa-claro);
+      color: var(--turquesa-oscuro);
+      font-size: 0.9em;
+    }
+
+     
+      img.proceso-imagen{
+        margin-bottom: 100px;
+      }
+      p.donar{font-size: 20px;
+      }
+       a.boton-donar {
+        font-size: 20px;
+      display: inline-block;
+      padding: 3px 7px;
+      background-color: var(--turquesa-oscuro);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s; }
+      a.volver{
+        font-size: 20px;
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: var(--turquesa-oscuro);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s
+      }
+      div.volver{
+        background-color: #00B4D8;
+      }
+      h2.titulo{margin-left: 100px; }
+      
+     section.carrusel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 16px;
+  }
+   img.santy {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+    .santy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-radius: 16px;
+  }
+
+  
+  .santy:hover img {
+    transform: scale(2.5);
+  }
+
+  
+  .santy:hover {
+    transform: scale(1.5);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
+  }
+
+ 
+  .carrusel::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .santy {
+      flex: 0 0 90%;
+    }}
+
+    img.santy{
+      margin-left: 12px;
+    }
+    /* Contenedor principal */
+  .rrusel {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  /* Pista que se desplaza automáticamente */
+  .rrusel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+  }
+
+  /* Cada imagen */
+  .david {
+    flex: 0 0 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+    position: relative;
+  }
+
+  .david img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-radius: 16px;
+  }
+
+  /* Zoom */
+  .david:hover img {
+    transform: scale(1.15);
+  }
+
+  .david:hover {
+    transform: scale(1.30);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
+  }
+
+  /* Animación del desplazamiento */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Duplicamos el contenido para un bucle infinito */
+  .rrusel-track > * {
+    flex-shrink: 0;
+  }
+
