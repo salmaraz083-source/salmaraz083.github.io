@@ -1,1 +1,139 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+  
 
+    /* Barra de navegación */
+    nav {
+      position: fixed; /* queda fijo */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #00B4D8;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd700; /* cambia color al pasar */
+    }
+
+    /* Portada */
+    .hero {
+      background: url("portada zm.png") center/cover no-repeat;
+      color: rgba(27, 143, 178, 0.616);
+      text-align: center;
+      padding: 120px 20px; /* ajusto por el nav fijo */
+      margin-top: 60px; /* para que no tape el menú */
+    }
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* Secciones */
+    section {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    /* Footer */
+    footer {
+      position: relative;
+      
+      background:#00B4D8 ;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    a.cel{color: rgb(233, 240, 234);}
+    main {
+      display: flex;
+      font-family: Impact,;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+ 
+
+      img.Producto {
+        margin-left: 85px;
+    }
+
+    a.producto:hover {
+      transform: scale(1.05);
+    }
+
+   .producto-info {
+      max-width: 500px;
+      background-color: var(--blanco);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    .producto-info h2 {
+      color: var(--turquesa-medio);
+      margin-bottom: 20px;
+    }
+
+    .producto-info p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+    }
+
+     div.producto-info{
+        background-color: #00B4D8;
+        margin-left: 35%;
+      }
+      a.boton-compra{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        display: inline-block;
+        background-color:rgb(119, 248, 121);
+        padding: 20px 30%;
+        color:rgb(45, 1, 1) ;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-left: 65px;
+      }
+      p.div{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+      }
+ img.logo{
+  margin-left: 30px;
+  min-height: 30px;}
+ 
+  p.personal{
+   color: black;
+   
+  }  
