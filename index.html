@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./style1.css">
+  
+</head>
+<body>
 
+  <!-- Barra de navegación fija -->
+  <nav>
+    
+  </nav>
+
+  <!-- Portada -->
+  <div class="hero">
+    
+    <h1 >EOLIA S.A </h1>
+    <img class="logo" src="./img/logo.jpeg" alt="" height="80px" width="120px">
+    
+  
+    <p> La pureza del aire en el mundo - Producto sustentable</p>
+  </div>
+  <main>
+     <h1 class="titulo">
+    “Creemos en un futuro donde la tecnología y la naturaleza pueden convivir.”
+     </h1>
+    <h3 class="cuerpo">
+       
+        El microemprendimiento Eolia surge como una propuesta innovadora y sustentable orientada a la
+ fabricación de purificadores de aire ecológicos elaborados con materiales reciclados y componentes
+ electrónicos reutilizados. La idea combina tecnología básica con conciencia ambiental, proponiendo
+ una alternativa práctica, económica y amigable con el medio ambiente frente a los costosos
+ purificadores industriales.
+ El propósito principal es transformar residuos en recursos útiles, demostrando que es posible crear
+ tecnología sustentable a bajo costo. Además, el proyecto fomenta valores como la educación
+ ambiental, la creatividad técnica y el trabajo colaborativo, al mismo tiempo que genera conciencia
+ sobre la reutilización de materiales y la reducción de desechos electrónicos.
+ Nuestro equipo busca que este producto sea más que un simple aparato: queremos que represente un
+ cambio de mentalidad, mostrando que la innovación no siempre requiere grandes recursos, sino
+ ingenio, compromiso y responsabilidad ecológica.
+    </h3>
+  </main>
+
+  <!-- Carrusel -->
+
+<div class="producto-info">
+   <img class="Producto" src="./img/WhatsApp Image 2025-11-11 at 19.16.24 (1).jpeg" alt="" height="400px " width="300px">
+   <p class="div"> Es un purificador artesanal diseñado para limpiar el aire mediante un sistema de filtrado sencillo.
+ Utiliza un ventilador reciclado de computadora que impulsa el aire a través de un filtro ecológico  eliminando polvo, humo y partículas contaminantes</p>
+   <a class="boton-compra" href="./index.html">ver</a>
+</div>
+  
+  <footer class="">
+     <a class="pie" href="tel:+3815145977"><img src=".//img/icon-instagram-21-20.svg" alt=""></a>
+    <p class="pie"><strong>EOLIA S.A</strong></p>
+     <p  class="personal">Personal</p>
+    <p>Solis Luisana Eugenia </p>
+    <p>Almaraz Tobias Gaston</p>
+    <p class="pie">&copy; 2025 Eolia - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Script del Carrusel -->
+  <script>
+    let current = 0;
+    const images = document.querySelectorAll('.carousel img');
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>
